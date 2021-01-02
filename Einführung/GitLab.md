@@ -49,8 +49,7 @@ Die Dritte Stelle steht für einen Bug fix in einer Quest.
 
 ## Änderungen rückgängig machen
 
-Falls du mal etwas falsch machst (was natürlich nie passiert ;) ) kannst du die lokalen Änderungen mit "Checkout" auf den letzten Stand im HEAD zurücksetzen. Änderungen, die du bereits zum Index hinzugefügt hast, bleiben bestehen.  
-Wenn du aber deine lokalen Änderungen komplett entfernen möchtest, holst du dir den letzten Stand vom remote Repository mit "reset".
+Falls du mal etwas falsch machst (was natürlich nie passiert ;) ) kannst du die Änderungen im `workspace` und im `index` mit `rollback` zurück setzen. Willst du auch die Änderungen in deinem `locale repository` rückgängig machen, so musst du den betreffenden Brach mit `checkout` einfach erneut vom `remote repository` herunterladen. Da git eine Historie besitzt kann auch rückwirkend jede Änderung wieder hergestellt werden.
 
 # Tickets & Meilensteine
 
