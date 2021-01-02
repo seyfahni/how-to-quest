@@ -20,9 +20,9 @@ Die drei Instanzen des `locale repository`:
 
 ## Add/Stash & Commit & Push
 
-Mit `add` beziehungsweise `stash` fügst du eine Änderung aus dem `workspace` zum `index` hinzu.   
-Mit dem `commit` fügst du nun die Änderungen aus dem `index` in dein `local repository` hinzu.   
-Mit `push` lädst du diese Änderungen im `local repository` hoch ins `remote repository`.   
+Mit `add` beziehungsweise `stash` fügst du eine Änderung aus dem `workspace` zum `index` hinzu.  
+Mit dem `commit` fügst du nun die Änderungen aus dem `index` in dein `local repository` hinzu.  
+Mit `push` lädst du diese Änderungen im `local repository` hoch ins `remote repository`.  
 
 ## Branching
 
@@ -35,10 +35,9 @@ Ein Branch ist nicht für andere verfügbar, bis du diesen in das `remote reposi
 ## Update & Merge
 
 Um dein `local repository` und `workspace` mit den neuesten Änderungen zu aktualisieren, verwende `pull`.
-Bei einem Pull wird zunächst das `local repository` aktualisiert (`fetch`) und dann die Änderungen mit deinem `workspace` zusammengeführt (`merge`).
-Wenn du einen anderen Branch mit deinem aktuellen (z. B. master) zusammenführen willst, benutze 'merge'.  
-In beiden Fällen versucht git die Änderungen automatisch zusammenzuführen. Unglücklicherweise ist dies nicht immer möglich und endet in Konflikten. Du bist verantwortlich, diese Konflikte durch manuelles Editieren der betroffenen Dateien zu lösen. Bist du damit fertig, musst du das Git mitteilen in dem du Add machst.
-Bevor du Änderungen zusammenführst, kannst du dir die Differenzen auch anschauen mit Diff.
+Bei einem Pull wird zunächst das `local repository` aktualisiert (`fetch`) und dann die Änderungen mit deinem `workspace` zusammengeführt (`merge`).  
+Wenn du einen anderen Branch mit deinem aktuellen (z. B. master) zusammenführen willst, benutzt man auch  'merge'. In deisem fall wird nicht dein `workspace` sondern die Änderungen zweier Branches Zusammengeführt.  
+Git wird jetzt versuchen automatisch diese Änderungen zusammenzuführen. Unglücklicherweise ist dies nicht immer möglich und endet in Konflikten. Solche Konflikte müssen händisch gelöst werden. Ist dies getan, so muss das Ergebnis daraus wieder mit `push` hochgeladen werden. Solltest du einmal in dieser Situation sein, scheue nicht davon nach Hilfe zu fragen.
 
 ## Tagging
 
