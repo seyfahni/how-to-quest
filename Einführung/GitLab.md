@@ -36,7 +36,7 @@ Ein Branch ist nicht für andere verfügbar, bis du diesen in das `remote reposi
 
 Um dein `local repository` und `workspace` mit den neuesten Änderungen zu aktualisieren, verwende `pull`.
 Bei einem `pull` wird zunächst das `local repository` aktualisiert (`fetch`) und dann die Änderungen mit deinem `workspace` zusammengeführt (`merge`).  
-Wenn du einen anderen Branch mit deinem aktuellen (z. B. master) zusammenführen willst, benutzt man auch  'merge'. In deisem fall wird nicht dein `workspace` sondern die Änderungen zweier Branches Zusammengeführt.  
+Wenn du einen anderen Branch mit deinem aktuellen (z. B. master) zusammenführen willst, benutzt man auch  `merge`. In deisem fall wird nicht dein `workspace` sondern die Änderungen zweier Branches Zusammengeführt.  
 Git wird jetzt versuchen automatisch diese Änderungen zusammenzuführen. Unglücklicherweise ist dies nicht immer möglich und endet in Konflikten. Solche Konflikte müssen händisch gelöst werden. Ist dies getan, so muss das Ergebnis daraus wieder mit `push` hochgeladen werden. Solltest du einmal in dieser Situation sein, scheue nicht davon nach Hilfe zu fragen.
 
 ## Tagging
