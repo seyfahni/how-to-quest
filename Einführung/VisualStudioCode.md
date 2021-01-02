@@ -1,0 +1,134 @@
+# Inhalt
+
+[[_TOC_]]
+
+# Allgemein
+
+Rahasia verwendet zum Skripten von Quest die Entwicklungsumgebung Visual Studio Code. Im Folgenden wird nun darauf eingegangen, wie ihr Visual Studio Code einrichtet und verwendet.
+
+Zunächst solltet ihr euch den [Visual Studio Code](https://code.visualstudio.com/) (VSC) herunterladen und installieren.
+
+# Einrichten
+
+1. “Window/Preferences”
+   - “/General”
+      - “/Workspace”
+         - “Refresh using native hooks or polling” aktivieren
+         - “Text file encoding” auf “UTF8” stellen
+      - “/Network Connections/SSH2”
+         - “Key Management” Tab öffnen
+         - Du hast bereits einen RSA Key?
+            - JA - “Load Existing Key…” klicken und “id_rsa” öffnen
+            - Nein - “Generate RSA Key…” klicken,
+              wenn gewollt ein Passwort in “Passphrase”
+              setzen und dann auf “Save Private Key..”
+              klicken
+         - Kopiere den Inhalt aus RSA Keys aus Eclipse und
+           füge ihn unter https://gitlab.com/profile/keys
+           ein und gib ihm einen entsprechenden Namen
+           (z.B. “Mein-PC”) und speichere diesen
+   - “/Team/Git”
+      - “Default repository folder” auf den gleichen Pfad
+        legen wie den Workspace von Eclipse
+      - “/Configuration”
+         - “Add Entry…” klicken
+            - Key: “user.name”, Value:
+              Dein GitLab Username
+            - Key: “user.email”, Value:
+              Deine in GitLab verwendete E-Mail
+2. “Help/Eclipse Marketplace”
+   - “YAML Editor 1.4.2” wird benötigt um .yml besser anzuzeigen.
+   - "Saros" wird benötigt, um in Echtzeit zusammenzuarbeiten.
+   - "FileSync" wird benötigt um euren Testserver zu Synchronisation, dazu später mehr.
+
+# Projekt Importieren
+
+Logge dich in GitLab ein und begib dich in das betreffende Projekt. Nun kopiere den SSH Link in die Zwischenablage.
+
+1. Importiere in Eclipse ein Projekt und wähle “Projects from Git(with smart import)” aus
+2. Wähle nun "Clone URl" aus
+3. Kopiere, falls nicht geschehen den Link in das Feld "URl"
+4. Wähle die Branches aus
+5. Bestätige alles mit "Finish"
+
+# Saros benutzen
+
+Saros ermöglicht es euch, in Echtzeit zusammenzuarbeiten.  
+Um Saros zu verwenden, braucht ihr zunächst die Saros View. Wenn diese noch nirgends geöffnet ist, öffne sie unter "Window/Show View". Wenn dies geschehen, klicke auf das "Connect" Symbol oben rechts im Saros Fenster. Im darauf folgenden Dialog erstelle dir einen Account unter der Email "@saros-con.imp.fu-berlin.de" mit deinem Passwort.
+
+Wenn geschehen, füge unter "Add a New Contact" die Personen hinzu, mit denen du zusammen arbeiten möchtest.  
+Wenn du nun auf ein Projekt Rechtsklick machst, wähle "Share With" aus und wähle den Kontakt aus. Alle beteiligten werden nun durch Dialoge geführt, dabei ist wichtig, dass die Personen, die die Anfrage annehmen das Projekt ebenfalls in ihrem Workspace haben, denn dann können diese beim "Sharen" "Use Existing Project" auswählen. Danach dauert es eine Weile, bis die Projekte Synchronisiert sind.
+
+Nachdem das Entwickeln abgeschlossen ist, Commited und Pushed eine Person alles, die andren setzen ihr Projekt mit Rechtsklick "Team/Reset" und dann "Hard" zurück.
+
+# FileSync einrichten
+
+FileSync hält euren Testserver auf dem aktuellen stand. Einmal eingerichtet, müsst ihr eure Quests nicht mehr zwischen Eclipe und eurem Testserver hin und her kopieren. Dazu müsst ihr zuvor eure [Testumgebung](/Einführung/Testumgebung) eingerichtet haben.  
+1. Rechtsklick auf euer Projekt und ganz unten auf "Properties" klicken
+2. Setze einen harken bei "Enable FileSync builder for project"
+3. Klicke auf "Add Folder..." nun hast du mehrer Möglichkeiten, ich empfehle die folgende:
+   - Setze den Harken für das ganze Projekt und klicke auf "OK"
+   - Klappe das Projekt auf, und editiere "Excluded: "
+   - Klicke im unteren Bereich "Exclusion patterns" auf "Add Multiple..."
+   - Nun wähle alle folgenden Einträge aus, indem du "STRG" gedrückt hältst und bestätige mit "OK":
+      - ".settings"
+      - "#Template"
+      - ".gitignore"
+      - ".project"
+4. Bestätige erneut mit "OK"
+5. Nun Navigiere unten in "Default target folder:" zu deinem Test Server und dann "\Quest Server\plugins\BetonQuest"
+6. Bestätige mit "Apply and Close"
+
+# Testumgebung in Eclipse starten
+
+Hier erklären wir, wie ihr aus Eclipse heraus, eure [Testumgebung](/Einführung/Testumgebung) startet. Diese solltest ihr zuvor eingerichtet haben. Sinn macht dies hier nur, wenn ihr zuvor FileSync eingerichtet habt.  
+1. Klicke auf den Pfeil das Rechte Symbol in Eclipse ![Ison](https://cdn.discordapp.com/attachments/520955035832811521/619116310323789864/unknown.png)
+2. Klicke auf "External Tools Configurations..."
+3. Mache einen Doppelkick auf "Program"
+4. Gib deiner Konfiguration einen Namen wie z.B. "Testumgebung"
+5. Klicke bei "Location:" auf "Browse File System..." und wähle von deiner Java Installation die "javaw.exe" aus. Dass kann dann so aussehen: "C:\Program Files\Java\jdk-9.0.4\bin\javaw.exe"
+6. Klicke bei "Working Directory:" auf "Browse File System..." und wähle den Ordner deiner Testumgebung aus.
+7. Kopiere in "Arguments:" folgendes:
+   ```
+   -Xms1G -Xmx2G -Dfile.endcoding=UTF-8 -Dlog4j.skipJansi=true -jar spigot.jar --world-dir worlds --level-name Lyria --log-strip-color
+   ```
+Wenn du nun auf "Run" Klickst, oder auf das im Bild umrahmte Icon klickst, startet dein Server nun in Eclipse. Es öffnet sich nun eine "Console" die das gleiche ist, wie ein CMD Fenster.
+
+# Eclipse und GitLab
+
+Zunächst solltet ihr den Wikieintag zu [GitLab](/Einführung/GitLab) gelesen und verstanden haben, um ein sinnvolles und korrektes arbeiten mit Git durchzuführen. Im Folgenden wird nämlich nur beschrieben, wie in Eclipse Git verwendet wird, jedoch nicht wie Git funktioniert oder eingesetzt wird.
+
+Alle zu GitLab gehörenden Funktionen findet ihr, wenn ihr auf das entsprechende Projekt einen Rechtsklick ausführt und dann in den Unterpunkt Team Navigiert. Hier findet ihr nahezu alles, was wir zum Arbeiten brauchen, auch wenn es noch mehr Funktionen gibt. Ich werde jetzt nur die wichtigen und für unseren nutzen notwendigen Funktionen erklären.
+## Projekt Übersicht  
+   ![Projekt](https://cdn.discordapp.com/attachments/520955035832811521/613702467045163027/unknown.png)  
+   Hier steht zuerst der Projektname.  
+   In der eckigen Klammer könnt ihr dann zuerst das Repository sehen und dann in welchem Branch ihr seid.
+## Projekt Pfeile  
+   ![Projekt](https://cdn.discordapp.com/attachments/520955035832811521/613702522703446026/unknown.png)  
+   Der Pfeil nach oben mit der 1 Zeigt, dass eine Änderung noch nicht Gepushed wurde.  
+   Der Pfeil nach unten mit der 1 Zeigt, dass eine Änderung noch nicht Gepulled wurde.
+## Icons  
+   ![Projekt](https://cdn.discordapp.com/attachments/520955035832811521/613701629509763073/IconDecorations.png)  
+
+   | Bezeichnung   | Beschreibung   |
+   |:--- |:--- |
+   | dirty (folder)   | Mindestens eine Datei im Ordner ist nicht mehr aktuell. Das bedeutet, dass es Änderungen im Workspace gibt, die weder im Index noch im Repository vorhanden sind.
+   | tracked          | Die Ressource ist dem Git-Repository bekannt.
+   | untracked        | Die Ressource ist dem Git-Repository nicht bekannt.
+   | ignored          | Die Ressource wird vom Git-Repository ignoriert. Die Voreinstellungen finden sich unter "Team/Ignored Resources". Die .gitignore-Datei wird nicht berücksichtigt.
+   | dirty            | Die Ressource weist Änderungen im Workspace auf, die weder im Index noch im Repository vorhanden sind.
+   | staged           | Die Ressource enthält Änderungen, die dem Index hinzugefügt werden. Nicht, dass das Hinzufügen zum Index derzeit möglich ist, aber im Commitdialog wurde die Ressource bereits hinzugefügt.
+   | partially-staged | Die Ressource verfügt über Änderungen, die dem Index hinzugefügt werden, sowie über Änderungen im Workspace, die weder im Index noch im Repository vorhanden sind.
+   | added            | Die Ressource wird in dem Git-Repository hinzugefügt.
+   | removed          | Die Ressource wird aus dem Git-Repository entfernen.
+   | conflict         | Die Ressource  hat merge conflicts.
+   | assume-valid     | Die Ressource hat das Flag "assume unchanged". Das bedeutet, dass Git die Ressource nicht mehr auf mögliche Änderungen überprüft. Sie müssen daher das Bit manuell deaktivieren, um Git mitzuteilen, wenn sich die Ressource ändert. Diese Einstellung kann mit der Menüaktion "Team/Assume unchanged" aktiviert werden.
+
+## Team  
+   ![Projekt](https://cdn.discordapp.com/attachments/520955035832811521/615593997150322689/unknown.png)  
+   Die wichtigsten Befehle im Untermenü Team, die nicht selbsterklärend sind.
+
+   | Bezeichnung   | Beschreibung   |
+   |:--- |:--- |
+   | Switch To   | Wechseln der Branches
+   | Reset       | Zurücksetzen des Projektes auf den Repository zustand
