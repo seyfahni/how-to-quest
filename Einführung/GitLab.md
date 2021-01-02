@@ -26,7 +26,7 @@ Mit `push` lädst du diese Änderungen im `local repository` hoch ins `remote re
 
 ## Branching
 
-Branches werden benutzt, um verschiedene Funktionen isoliert voneinander zu entwickeln. Der master-Branch ist der "Standard"-Branch, wenn du ein neues `repository` erstellst. Du solltest aber für die Entwicklung andere Branches verwenden und diese dann in den Master-Branch zusammenführen (mergen).
+Branches werden benutzt, um verschiedene Funktionen isoliert voneinander zu entwickeln. Dies ist vergleichbar, mit einer Kopie des Originalen Ordners. Der `master`-Branch ist der "Standard"-Branch, wenn du ein neues `repository` erstellst. Du solltest aber für die Entwicklung neuer Dinge andere Branches verwenden/erstellen und diese dann in den Master-Branch zusammenführen (mergen).
 
 ![Concept](https://cdn.discordapp.com/attachments/520955035832811521/615846516799701001/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a69485050613732.png)
 
