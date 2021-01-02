@@ -4,8 +4,8 @@
 
 # Allgemein
 
-Hier wird alles zu BetonQuest erklärt, dass du nicht in der Doku findet oder missverständlich ist.  
-Die Doku findest du hier: https://github.com/bundabrg/BetonQuest/tree/preview/docs.
+Hier wird alles zu BetonQuest erklärt.  
+Die Doku findest du hier: https://betonquest.github.io/BetonQuest/DEV.
 Geschriebene Quests oder Quest Pakete werden einfach in den Ordner von BetonQuest im plugins Ordner Kopiert.
 
 # Quest schreiben & Konventionen
