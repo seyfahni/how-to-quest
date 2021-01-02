@@ -18,28 +18,11 @@ Parallel dazu lade dir [Git](https://git-scm.com/downloads) herunter und install
        Wenn die Datei bereits existierte oder du sie nun erstellt hast, öffne die Datei mit der Endung `.pub`. Den inhalt aus dieser Datei kopierst du nun aus diese Seite https://gitlab.com/-/profile/keys und gebe dem Key noch einen aussagekräftigen Namen(z.B. `PC-Privat`).
     2. Importieren des Projektes in VSC
        Schließe in VSC alle Dateien und Ordner, die du offen hast. Nun wechsle an der Linken Seite in den Tab `Source Control` und Klicke auf `Clone Repository`. Nun kopiere von GitLab die SSH URL, diese findest du auf der Startseite des entsprechenden Repositories oben rechts wenn du auf `Clone` klickst. hast du die URL in VSC eingefügt und Enter gedrückt, wähle einen Ordner, in dem du zukünftig arbeiten willst.
-1. BetonQuest addon
-2. Live Share addon
-
-# Projekt Importieren
-
-Logge dich in GitLab ein und begib dich in das betreffende Projekt. Nun kopiere den SSH Link in die Zwischenablage.
-
-1. Importiere in Eclipse ein Projekt und wähle “Projects from Git(with smart import)” aus
-2. Wähle nun "Clone URl" aus
-3. Kopiere, falls nicht geschehen den Link in das Feld "URl"
-4. Wähle die Branches aus
-5. Bestätige alles mit "Finish"
-
-# Saros benutzen
-
-Saros ermöglicht es euch, in Echtzeit zusammenzuarbeiten.  
-Um Saros zu verwenden, braucht ihr zunächst die Saros View. Wenn diese noch nirgends geöffnet ist, öffne sie unter "Window/Show View". Wenn dies geschehen, klicke auf das "Connect" Symbol oben rechts im Saros Fenster. Im darauf folgenden Dialog erstelle dir einen Account unter der Email "@saros-con.imp.fu-berlin.de" mit deinem Passwort.
-
-Wenn geschehen, füge unter "Add a New Contact" die Personen hinzu, mit denen du zusammen arbeiten möchtest.  
-Wenn du nun auf ein Projekt Rechtsklick machst, wähle "Share With" aus und wähle den Kontakt aus. Alle beteiligten werden nun durch Dialoge geführt, dabei ist wichtig, dass die Personen, die die Anfrage annehmen das Projekt ebenfalls in ihrem Workspace haben, denn dann können diese beim "Sharen" "Use Existing Project" auswählen. Danach dauert es eine Weile, bis die Projekte Synchronisiert sind.
-
-Nachdem das Entwickeln abgeschlossen ist, Commited und Pushed eine Person alles, die andren setzen ihr Projekt mit Rechtsklick "Team/Reset" und dann "Hard" zurück.
+    3. Nun kannst du den Ordner in VSC öffnen
+2. VSC einrichten addons
+    1. navigiere in den Tab `Extensions` und installiere die beiden Erweiterungen
+    2. `BetonQuest Code Snippets` addon. Dieses fügt eine Autovervollständigung für BQ hinzu.
+    3. `Live Share` addon. Ermöglicht es in Echtzeit zusammen zu arbeiten.
 
 # FileSync einrichten
 
