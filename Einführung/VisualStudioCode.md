@@ -6,40 +6,13 @@
 
 Rahasia verwendet zum Skripten von Quest die Entwicklungsumgebung Visual Studio Code. Im Folgenden wird nun darauf eingegangen, wie ihr Visual Studio Code einrichtet und verwendet.
 
-Zunächst solltet ihr euch den [Visual Studio Code](https://code.visualstudio.com/) (VSC) herunterladen und installieren.
+Zunächst solltet ihr euch [Visual Studio Code](https://code.visualstudio.com/) (VSC) herunterladen und installieren.
+Parallel dazu lade dir [Git](https://git-scm.com/downloads) herunter und installiere es ebenfalls.
 
 # Einrichten
 
-1. “Window/Preferences”
-   - “/General”
-      - “/Workspace”
-         - “Refresh using native hooks or polling” aktivieren
-         - “Text file encoding” auf “UTF8” stellen
-      - “/Network Connections/SSH2”
-         - “Key Management” Tab öffnen
-         - Du hast bereits einen RSA Key?
-            - JA - “Load Existing Key…” klicken und “id_rsa” öffnen
-            - Nein - “Generate RSA Key…” klicken,
-              wenn gewollt ein Passwort in “Passphrase”
-              setzen und dann auf “Save Private Key..”
-              klicken
-         - Kopiere den Inhalt aus RSA Keys aus Eclipse und
-           füge ihn unter https://gitlab.com/profile/keys
-           ein und gib ihm einen entsprechenden Namen
-           (z.B. “Mein-PC”) und speichere diesen
-   - “/Team/Git”
-      - “Default repository folder” auf den gleichen Pfad
-        legen wie den Workspace von Eclipse
-      - “/Configuration”
-         - “Add Entry…” klicken
-            - Key: “user.name”, Value:
-              Dein GitLab Username
-            - Key: “user.email”, Value:
-              Deine in GitLab verwendete E-Mail
-2. “Help/Eclipse Marketplace”
-   - “YAML Editor 1.4.2” wird benötigt um .yml besser anzuzeigen.
-   - "Saros" wird benötigt, um in Echtzeit zusammenzuarbeiten.
-   - "FileSync" wird benötigt um euren Testserver zu Synchronisation, dazu später mehr.
+1. BetonQuest addon
+2. Live Share addon
 
 # Projekt Importieren
 
