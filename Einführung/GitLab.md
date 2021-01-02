@@ -41,7 +41,7 @@ Git wird jetzt versuchen automatisch diese Änderungen zusammenzuführen. Unglü
 
 ## Tagging
 
-Es wird empfohlen, für Software Releasestags zu verwenden. Du kannst einen neuen Tag namens 1.0.0 erstellen.
+Es wird empfohlen, für Software Releasestags zu verwenden. Du kannst einen neuen Tag namens `v1.0.0` erstellen.
 Versionen Taggen wir nur im Master, um Fortschritte zu markieren.  
 Die Erste Stelle steht für eine neue Quest.  
 Die Zweite Stelle steht für eine Änderung in einer Quest.  
