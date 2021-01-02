@@ -10,7 +10,9 @@ Hier wird im Folgenden das Konzept von Git erklärt und genauer auf GitLab einge
 
 Um den Workflow nachzuvollziehen ist folgendes Bild hilfreich  
 ![Concept](https://cdn.discordapp.com/attachments/520955035832811521/615837217562165259/MgaV9.png)  
-Dein lokales Repository besteht aus drei "Instanzen", die von Git verwaltet werden. Die erste ist dein "Workspace", welcher die echten Dateien auf deinem PC enthält, in und mit diesen arbeitest du. Die zweite ist der "Index", welcher als Zwischenstufe agiert und zu guter Letzt noch der "HEAD", der in deinem "local repository" liegt. Der Head zeigt auf deinen letzten Commit. Das "remote repository" ist GitLab, eine Art Cloud speicher, in dem alle Änderungen zusammen laufen.
+Dein lokales Repository besteht aus drei "Instanzen", die von Git verwaltet werden.
+1. Die erste ist dein "Workspace", welcher die echten Dateien auf deinem PC enthält, in und mit diesen arbeitest du. Diesen ist also dein tatsächliches Verzeichnis mit allen Daten auf deinem PC.
+2. Die zweite ist der "Index", welcher als Zwischenstufe agiert und zu guter Letzt noch der "HEAD", der in deinem "local repository" liegt. Der Head zeigt auf deinen letzten Commit. Das "remote repository" ist GitLab, eine Art Cloud speicher, in dem alle Änderungen zusammen laufen.
 
 ## Add & Commit
 
