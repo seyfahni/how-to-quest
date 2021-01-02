@@ -18,23 +18,19 @@ Die drei Instanzen des lokalen Repositories:
 2. Die zweite ist der `Index`, dieser zeigt deine aktuellen Änderungen an, diese sind aber noch nicht im `local` oder `remote` Repository.
 3. Erst wenn du Änderungen bestätigst, landen diese auch im sogenannten `local repository`. Dieses enthält in der Regel das `remote repository` und von dir durchgeführte Änderungen. Der aktuellste stand im Lokalen Repository nennt sich "HEAD".
 
-## Add & Commit
+## Add/Stash & Commit & Push
 
-Du kannst Änderungen vorschlagen (zum Index hinzufügen) mit Add.  
-Das ist der erste Schritt im Git Workflow, du bestätigst deine Änderungen mit einem Commit.
-Jetzt befindet sich die Änderung im HEAD, aber noch nicht im entfernten Repository.
-
-## Änderungen hochladen
-
-Die Änderungen sind jetzt im HEAD deines lokalen Repositories. Um die Änderungen an dein entferntes Repository zu senden, führe einen Push aus. Ob du in den master kannst du auch ändern, mehr über Branches erfährst du später.   
+Mit `add` beziehungsweise `stash` fügst du eine Änderung aus dem `workspace` zum index hinzu.   
+Mit dem `commit` fügst du nun die Änderungen aus dem `index` in dein `local repository` hinzu.   
+Mit `push` lädst du diese Änderungen im `local repository` hoch ins `remote repository`.   
 
 ## Branching
 
-Branches werden benutzt, um verschiedene Funktionen isoliert voneinander zu entwickeln. Der master-Branch ist der "Standard"-Branch, wenn du ein neues Repository erstellst. Du solltest aber für die Entwicklung andere Branches verwenden und diese dann in den Master-Branch zusammenführen (mergen). Auch das lernst du später.
+Branches werden benutzt, um verschiedene Funktionen isoliert voneinander zu entwickeln. Der master-Branch ist der "Standard"-Branch, wenn du ein neues Repository erstellst. Du solltest aber für die Entwicklung andere Branches verwenden und diese dann in den Master-Branch zusammenführen (mergen).
 
 ![Concept](https://cdn.discordapp.com/attachments/520955035832811521/615846516799701001/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a69485050613732.png)
 
-Ein Branch ist nicht für andere verfügbar, bis du diesen in dein entferntes Repository hochlädst oder der Branch wurde direkt in GitLab angelegt.
+Ein Branch ist nicht für andere verfügbar, bis du diesen in das `remote repository` hochlädst oder der Branch wurde direkt in GitLab angelegt.
 
 ## Update & Merge
 
