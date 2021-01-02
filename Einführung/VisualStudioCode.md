@@ -16,6 +16,8 @@ Parallel dazu lade dir [Git](https://git-scm.com/downloads) herunter und install
        Prüfe hierzu zunächst ob du bereits einen SSH key Besitzt, dazu gehst du in dein Benutzerverzeichnis auf deinem PC und navigierst in den Ordner `.ssh` Ordner und suche nach einer Datei mit der endung `.pub`. Ist der Ordner oder die Datei nicht vorhanden, So müssen wir diese nun erstellen.  
        Um einen ssh Key zu erstellen, mache einen Rechts Klick in einem beliebigen Ordner und klick auf `Git Bash Here`. Führe nun entweder `ssh-keygen` aus(lasse dabei das Passwort, nach dem du gafragt wirdt leer) oder wenn du ihn mit Passwort möchtest führe `ssh-keygen -o` aus(ein Passwort muss jedes mal eingegeben werden, wenn du `pull` oder `push` machst).  
        Wenn die Datei bereits existierte oder du sie nun erstellt hast, öffne die Datei mit der Endung `.pub`. Den inhalt aus dieser Datei kopierst du nun aus diese Seite https://gitlab.com/-/profile/keys und gebe dem Key noch einen aussagekräftigen Namen(z.B. `PC-Privat`).
+    2. Importieren des Projektes in VSC
+       Schließe in VSC alle Dateien und Ordner, die du offen hast. Nun wechsle an der Linken Seite in den Tab `Source Control` und Klicke auf `Clone Repository`. Nun kopiere von GitLab die SSH URL, diese findest du auf der Startseite des entsprechenden Repositories oben rechts wenn du auf `Clone` klickst. hast du die URL in VSC eingefügt und Enter gedrückt, wähle einen Ordner, in dem du zukünftig arbeiten willst.
 1. BetonQuest addon
 2. Live Share addon
 
