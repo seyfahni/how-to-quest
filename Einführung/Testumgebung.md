@@ -46,32 +46,19 @@ Entpacke [Server_Configs.zip](uploads/6f84747ff975129b103d0bfd1e6bbcb9/Server_Co
 Alle Pugins kommen in den "plugins" Ordner im Server Ordner. Normalerweise legt jedes Plugin darin einen gleichnamigen Ordner an, in dem alle Configs usw. liegen. Achte bitte darauf die jeweilige aktuellste Version der Plugins für die Entsprechende Spigot Version herunterzuladen.
 
 ## BetonQuest
-Website: [BetonQuest](https://github.com/bundabrg/BetonQuest)
+Website: [BetonQuest](https://github.com/BetonQuest/BetonQuest)
 
 BetonQuest dient dazu, die Quests zu schreiben.  
 Dies ist ein komplexes Plugin, mit dem du in Zukunft Quest Schreiben wirst. Weitere Informationen findest du im Wiki Beitrag [BetonQuest](/Einführung/BetonQuest).  
 Begib dich nun in die Config von BetonQuest und stelle Folgende dinge um:
    - `language` auf `de`
-   - `default_journal_slot` auf `40`
+   - `default_journal_slot` auf `-1`
    - `default_conversation_IO` auf `tellraw`
    - `display_chat_after_conversation` auf `false `
    - `journal.one_entry_per_page` auf `true`
    - `journal.full_main_page` auf `true`
    - `journal.hide_date` auf `true`
 
-## Citizens
-Website: [Citizens](https://www.spigotmc.org/resources/citizens.13811/)
-
-Citizens dient dazu  NPCs zu erstellen und diesen gewisse Aktionen, wie Bewegung dieser, zu erstellen.  
-In der Beschreibung lässt sich der "free" download link finden.
-
-## NPCDestinations
-Website: [NPCDestinations](https://www.spigotmc.org/resources/nunpcdestinations-create-living-npcs.13863/)
-
-NPCDestinations verbessert das Pathfinding(Bewegung) der NPCs.  
-Zudem lässt es viele weitere Funktionen zu wie Mehrer Positionen zu verschiedenen Zeiten, Events, Kommandos usw. Eine vollständige liste, findet sich auf der Homepage.
-
-## ProtocolLib
-Website: [ProtocolLib](https://www.spigotmc.org/resources/protocollib.1997/)
-
-Dies ist eine Wichtiges Plugin, für viele andere Plugins, um untereinander zu kommunizieren.
+## Weitere Plugins
+Es können weitere Plugins verwendet werden, die von BetonQuest unterstützt werden. Eine Liste alle unterstützten Plugins findest du hier: https://betonquest.github.io/BetonQuest/DEV/User-Documentation/Compatibility/
+Nicht alle diese Plugins sind auf Rahasia installiert, bei fragen an ein Team Mitglied wenden!
