@@ -10,13 +10,13 @@ Hier wird im Folgenden das Konzept von Git erklärt und genauer auf GitLab einge
 
 Um den Workflow nachzuvollziehen ist folgendes Bild hilfreich  
 ![Concept](https://cdn.discordapp.com/attachments/520955035832811521/615837217562165259/MgaV9.png)  
-Dein lokales Repository besteht aus drei "Instanzen", die von Git verwaltet werden. 
+Dein `locale repository` besteht aus drei "Instanzen", die von Git verwaltet werden. 
 Die Vierte "Instanz" ist GitLab, das sogenannte `remote repository`. Dieses ist eine Art Cloud speicher, in dem alle Änderungen zusammen laufen.
 
-Die drei Instanzen des lokalen Repositories:
+Die drei Instanzen des `locale repository`:
 1. Die erste ist dein `Workspace`, welcher die echten Dateien auf deinem PC enthält, in und mit diesen arbeitest du. Dieser ist also dein tatsächliches Verzeichnis mit allen Daten auf deinem PC.
 2. Die zweite ist der `Index`, dieser zeigt deine aktuellen Änderungen an, diese sind aber noch nicht im `local` oder `remote` Repository.
-3. Erst wenn du Änderungen bestätigst, landen diese auch im sogenannten `local repository`. Dieses enthält in der Regel das `remote repository` und von dir durchgeführte Änderungen. Der aktuellste stand im Lokalen Repository nennt sich "HEAD".
+3. Erst wenn du Änderungen bestätigst, landen diese auch im sogenannten `local repository`. Dieses enthält in der Regel das `remote repository` und von dir durchgeführte Änderungen. Der aktuellste stand im `locale repository` nennt sich "HEAD".
 
 ## Add/Stash & Commit & Push
 
@@ -26,7 +26,7 @@ Mit `push` lädst du diese Änderungen im `local repository` hoch ins `remote re
 
 ## Branching
 
-Branches werden benutzt, um verschiedene Funktionen isoliert voneinander zu entwickeln. Der master-Branch ist der "Standard"-Branch, wenn du ein neues Repository erstellst. Du solltest aber für die Entwicklung andere Branches verwenden und diese dann in den Master-Branch zusammenführen (mergen).
+Branches werden benutzt, um verschiedene Funktionen isoliert voneinander zu entwickeln. Der master-Branch ist der "Standard"-Branch, wenn du ein neues `repository` erstellst. Du solltest aber für die Entwicklung andere Branches verwenden und diese dann in den Master-Branch zusammenführen (mergen).
 
 ![Concept](https://cdn.discordapp.com/attachments/520955035832811521/615846516799701001/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a69485050613732.png)
 
