@@ -20,8 +20,8 @@ Parallel dazu lade dir [Git](https://git-scm.com/downloads) herunter und install
        Schließe in VSC alle Dateien und Ordner, die du offen hast. Nun wechsle an der Linken Seite in den Tab `Source Control` und Klicke auf `Clone Repository`. Nun kopiere von GitLab die SSH URL, diese findest du auf der Startseite des entsprechenden Repositories oben rechts wenn du auf `Clone` klickst. hast du die URL in VSC eingefügt und Enter gedrückt, wähle einen Ordner, in dem du zukünftig arbeiten willst.
     3. Nun kannst du den Ordner in VSC öffnen
 2. Git User Name und E-Mail Adresse
-   Mache einen Rechts Klick in einem beliebigen Ordner und klick auf `Git Bash Here`. Nun gebe diese beiden Befehle ein und ersetze deinen Namen und dein E-Mail adresse.
-  `git config --global user.name "USER_NAME"`
+   Mache einen Rechts Klick in einem beliebigen Ordner und klick auf `Git Bash Here`. Nun gebe diese beiden Befehle ein und ersetze deinen Namen und dein E-Mail adresse.  
+  `git config --global user.name "USER_NAME"`  
   `git config --global user.email "E-MAIL_ADDRESS"`
 3. VSC einrichten addons
     1. navigiere in den Tab `Extensions` und installiere die beiden Erweiterungen
