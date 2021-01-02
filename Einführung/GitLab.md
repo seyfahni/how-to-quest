@@ -11,7 +11,7 @@ Hier wird im Folgenden das Konzept von Git erklärt und genauer auf GitLab einge
 Um den Workflow nachzuvollziehen ist folgendes Bild hilfreich  
 ![Concept](https://cdn.discordapp.com/attachments/520955035832811521/615837217562165259/MgaV9.png)  
 Dein lokales Repository besteht aus drei "Instanzen", die von Git verwaltet werden. 
-Die Vierte `Instanz` ist GitLab, das sogenannte `remote repository`. Dieses ist eine Art Cloud speicher, in dem alle Änderungen zusammen laufen.
+Die Vierte "Instanz" ist GitLab, das sogenannte `remote repository`. Dieses ist eine Art Cloud speicher, in dem alle Änderungen zusammen laufen.
 
 Die drei Instanzen des lokalen Repositories:
 1. Die erste ist dein `Workspace`, welcher die echten Dateien auf deinem PC enthält, in und mit diesen arbeitest du. Dieser ist also dein tatsächliches Verzeichnis mit allen Daten auf deinem PC.
