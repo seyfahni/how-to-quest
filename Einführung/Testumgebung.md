@@ -8,7 +8,7 @@ In diesem Eintrag wird erklärt, wie ihr euren eigenen Minecraft Server zum Test
 
 # Voraussetzungen
 1. Du musst Java 8 oder eine aktuellere Version installiert haben.
-2. Lade dir eine Aktuelle Spigot Version herunter. Hierfür kannst du Wolf2323's download nutzen: [Spigot](https://gitlab.com/Wolf2323/Spigot)
+2. Lade dir eine Aktuelle Paper Version herunter. https://papermc.io/downloads
 3. Lege einen Ordner für den Server an, in den du die Spigot jar legst.
 
 # Installation
