@@ -20,7 +20,7 @@ Die drei Instanzen des lokalen Repositories:
 
 ## Add/Stash & Commit & Push
 
-Mit `add` beziehungsweise `stash` fügst du eine Änderung aus dem `workspace` zum index hinzu.   
+Mit `add` beziehungsweise `stash` fügst du eine Änderung aus dem `workspace` zum `index` hinzu.   
 Mit dem `commit` fügst du nun die Änderungen aus dem `index` in dein `local repository` hinzu.   
 Mit `push` lädst du diese Änderungen im `local repository` hoch ins `remote repository`.   
 
