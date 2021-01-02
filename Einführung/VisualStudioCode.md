@@ -14,7 +14,7 @@ Parallel dazu lade dir [Git](https://git-scm.com/downloads) herunter und install
 1. Einrichtung von GitLab
     1. Hinzufügen eines SSH Keys.
        Prüfe hierzu zunächst ob du bereits einen SSH key Besitzt, dazu gehst du in dein Benutzerverzeichnis auf deinem PC und navigierst in den Ordner `.ssh` Ordner und suche nach einer Datei mit der endung `.pub`. Ist der Ordner oder die Datei nicht vorhanden, So müssen wir diese nun erstellen.
-       Um einen ssh Key zu erstellen, mache einen Rechts Klick in einem beliebigen Ordner und klick auf `Git Bash Here`. Führe nun entweder `ssh-keygen` aus oder wenn du ihn mit Passwort möchtest führe `ssh-keygen -o` aus(ein Passwort muss jedes mal eingegeben werden, wenn du `pull` oder `push` machst).
+       Um einen ssh Key zu erstellen, mache einen Rechts Klick in einem beliebigen Ordner und klick auf `Git Bash Here`. Führe nun entweder `ssh-keygen` aus(lasse dabei das Passwort, nach dem du gafragt wirdt leer) oder wenn du ihn mit Passwort möchtest führe `ssh-keygen -o` aus(ein Passwort muss jedes mal eingegeben werden, wenn du `pull` oder `push` machst).
 
 https://gitlab.com/-/profile/keys
 1. BetonQuest addon
