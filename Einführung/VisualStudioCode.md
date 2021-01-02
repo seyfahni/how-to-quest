@@ -21,28 +21,11 @@ Parallel dazu lade dir [Git](https://git-scm.com/downloads) herunter und install
     3. Nun kannst du den Ordner in VSC öffnen
 2. VSC einrichten addons
     1. navigiere in den Tab `Extensions` und installiere die beiden Erweiterungen
-    2. `BetonQuest Code Snippets` addon. Dieses fügt eine Autovervollständigung für BQ hinzu.
-    3. `Live Share` addon. Ermöglicht es in Echtzeit zusammen zu arbeiten.
+    2. `BetonQuest Code Snippets` Dieses fügt eine Autovervollständigung für BQ hinzu.
+    3. `Live Share` Ermöglicht es in Echtzeit zusammen zu arbeiten.
+    4. `File Sync` Ermöglicht es z.B. deinen Test Server für einzelne oder alle Quests synchron mit dem Repository zu halten
 
-# FileSync einrichten
-
-FileSync hält euren Testserver auf dem aktuellen stand. Einmal eingerichtet, müsst ihr eure Quests nicht mehr zwischen Eclipe und eurem Testserver hin und her kopieren. Dazu müsst ihr zuvor eure [Testumgebung](/Einführung/Testumgebung) eingerichtet haben.  
-1. Rechtsklick auf euer Projekt und ganz unten auf "Properties" klicken
-2. Setze einen harken bei "Enable FileSync builder for project"
-3. Klicke auf "Add Folder..." nun hast du mehrer Möglichkeiten, ich empfehle die folgende:
-   - Setze den Harken für das ganze Projekt und klicke auf "OK"
-   - Klappe das Projekt auf, und editiere "Excluded: "
-   - Klicke im unteren Bereich "Exclusion patterns" auf "Add Multiple..."
-   - Nun wähle alle folgenden Einträge aus, indem du "STRG" gedrückt hältst und bestätige mit "OK":
-      - ".settings"
-      - "#Template"
-      - ".gitignore"
-      - ".project"
-4. Bestätige erneut mit "OK"
-5. Nun Navigiere unten in "Default target folder:" zu deinem Test Server und dann "\Quest Server\plugins\BetonQuest"
-6. Bestätige mit "Apply and Close"
-
-# Testumgebung in Eclipse starten
+# Testumgebung in VSC starten
 
 Hier erklären wir, wie ihr aus Eclipse heraus, eure [Testumgebung](/Einführung/Testumgebung) startet. Diese solltest ihr zuvor eingerichtet haben. Sinn macht dies hier nur, wenn ihr zuvor FileSync eingerichtet habt.  
 1. Klicke auf den Pfeil das Rechte Symbol in Eclipse ![Ison](https://cdn.discordapp.com/attachments/520955035832811521/619116310323789864/unknown.png)
