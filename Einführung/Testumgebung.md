@@ -12,7 +12,7 @@ In diesem Eintrag wird erklärt, wie ihr euren eigenen Minecraft Server zum Test
 3. Lege einen Ordner für den Server an, in den du die Spigot jar legst.
 
 # Installation
-Entpacke [Server_Configs.zip](uploads/6f84747ff975129b103d0bfd1e6bbcb9/Server_Configs.zip) in deinem Server Ordner.
+Entpacke [Server_Configs.zip](uploads/4ab281b9791ec307d25cafdf18757e64/Server_Configs.zip) in deinem test Server Ordner.
 ## Windows
 1. Lege eine Datei in deinem Server Ordner an und kopiere den folgenden Text hinein. Dann speichere die Datei als "start.bat".
 2. ```
