@@ -50,14 +50,7 @@ Website: [BetonQuest](https://github.com/BetonQuest/BetonQuest)
 
 BetonQuest dient dazu, die Quests zu schreiben.  
 Dies ist ein komplexes Plugin, mit dem du in Zukunft Quest Schreiben wirst. Weitere Informationen findest du im Wiki Beitrag [BetonQuest](/Einführung/BetonQuest).  
-Begib dich nun in die Config von BetonQuest und stelle Folgende dinge um:
-   - `language` auf `de`
-   - `default_journal_slot` auf `-1`
-   - `default_conversation_IO` auf `tellraw`
-   - `display_chat_after_conversation` auf `false `
-   - `journal.one_entry_per_page` auf `true`
-   - `journal.full_main_page` auf `true`
-   - `journal.hide_date` auf `true`
+Die `config.yml` von BetonQuest übernimmst du aus dem Repository
 
 ## Weitere Plugins
 Es können weitere Plugins verwendet werden, die von BetonQuest unterstützt werden. Eine Liste alle unterstützten Plugins findest du hier: https://betonquest.github.io/BetonQuest/DEV/User-Documentation/Compatibility/
