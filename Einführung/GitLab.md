@@ -26,7 +26,7 @@ Mit `push` lädst du diese Änderungen im `local repository` hoch ins `remote re
 
 ## Branching
 
-Branches werden benutzt, um verschiedene Funktionen isoliert voneinander zu entwickeln. Dies ist vergleichbar, mit einer Kopie des Originalen Ordners. Der `master`-Branch ist der "Standard"-Branch, wenn du ein neues `repository` erstellst. Du solltest aber für die Entwicklung neuer Dinge andere Branches verwenden/erstellen und diese dann in den Master-Branch zusammenführen (mergen).
+Branches werden benutzt, um verschiedene Funktionen isoliert voneinander zu entwickeln. Dies ist vergleichbar, mit einer Kopie des Originalen Ordners. Der `master`-Branch ist der "Standard"-Branch, wenn du ein neues `repository` erstellst. Du solltest aber für die Entwicklung neuer Dinge andere Branches verwenden/erstellen und diese dann in den Master-Branch zusammenführen (`mergen`). Beim Zusammenführen werden die Änderungen aus beiden Ordnern vereint.
 
 ![Concept](https://cdn.discordapp.com/attachments/520955035832811521/615846516799701001/68747470733a2f2f63646e2d696d616765732d312e6d656469756d2e636f6d2f6d61782f313630302f312a69485050613732.png)
 
@@ -34,8 +34,9 @@ Ein Branch ist nicht für andere verfügbar, bis du diesen in das `remote reposi
 
 ## Update & Merge
 
-Um dein lokales Repository mit den neuesten Änderungen zu aktualisieren, verwende Pull in deinem Workspace, um die Änderungen erst herunterzuladen (fetch) und dann mit deinem Stand zusammenzuführen (merge).
-Wenn du einen anderen Branch mit deinem aktuellen (z. B. master) zusammenführen willst, benutze Merge.  
+Um dein `local repository` und `workspace` mit den neuesten Änderungen zu aktualisieren, verwende `pull`.
+Bei einem Pull wird zunächst das `local repository` aktualisiert (`fetch`) und dann die Änderungen mit deinem `workspace` zusammengeführt (`merge`).
+Wenn du einen anderen Branch mit deinem aktuellen (z. B. master) zusammenführen willst, benutze 'merge'.  
 In beiden Fällen versucht git die Änderungen automatisch zusammenzuführen. Unglücklicherweise ist dies nicht immer möglich und endet in Konflikten. Du bist verantwortlich, diese Konflikte durch manuelles Editieren der betroffenen Dateien zu lösen. Bist du damit fertig, musst du das Git mitteilen in dem du Add machst.
 Bevor du Änderungen zusammenführst, kannst du dir die Differenzen auch anschauen mit Diff.
 
