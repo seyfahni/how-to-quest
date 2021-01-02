@@ -34,6 +34,6 @@ Parallel dazu lade dir [Git](https://git-scm.com/downloads) herunter und install
 Zunächst solltet ihr den Wikieintag zu [GitLab](/Einführung/GitLab) gelesen und verstanden haben, um ein sinnvolles und korrektes arbeiten mit Git durchzuführen. Im Folgenden wird nämlich nur beschrieben, wie in VSC Git verwendet wird, jedoch nicht wie Git funktioniert oder eingesetzt wird.
 
 Alle zu Git gehörigen Aktionen findest du im `Source Control` Tab.  
-![Git](https://cdn.discordapp.com/attachments/520942709205237760/795019473161682954/unknown.png)
 Mit dem harken kannst du deine Änderungen `committen` Hier kannst du, wenn du dies das erste mal macht auch auch permanent den `stash` schritt überspringen. Wenn du nun Das ganze hochlädst, gib dem ganzen noch eine aussagekräftige Beschreibung, was du geändert hast.  
-Alle weiteren Aktionen findest du unter den drei Punkten. Die Aktionen darin solltest du aus dem Git Artikel kennen.
+Alle weiteren Aktionen findest du unter den drei Punkten. Die Aktionen darin solltest du aus dem Git Artikel kennen.  
+![Git](https://cdn.discordapp.com/attachments/520942709205237760/795019473161682954/unknown.png)
