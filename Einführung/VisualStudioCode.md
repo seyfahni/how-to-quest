@@ -25,12 +25,8 @@ Parallel dazu lade dir [Git](https://git-scm.com/downloads) herunter und install
     3. `Live Share` Ermöglicht es in Echtzeit zusammen zu arbeiten.
     4. `File Sync` Ermöglicht es z.B. deinen Test Server für einzelne oder alle Quests synchron mit dem Repository zu halten
 
-# Eclipse und GitLab
+# VSC und Git
 
-Zunächst solltet ihr den Wikieintag zu [GitLab](/Einführung/GitLab) gelesen und verstanden haben, um ein sinnvolles und korrektes arbeiten mit Git durchzuführen. Im Folgenden wird nämlich nur beschrieben, wie in Eclipse Git verwendet wird, jedoch nicht wie Git funktioniert oder eingesetzt wird.
+Zunächst solltet ihr den Wikieintag zu [GitLab](/Einführung/GitLab) gelesen und verstanden haben, um ein sinnvolles und korrektes arbeiten mit Git durchzuführen. Im Folgenden wird nämlich nur beschrieben, wie in VSC Git verwendet wird, jedoch nicht wie Git funktioniert oder eingesetzt wird.
 
-Alle zu GitLab gehörenden Funktionen findet ihr, wenn ihr auf das entsprechende Projekt einen Rechtsklick ausführt und dann in den Unterpunkt Team Navigiert. Hier findet ihr nahezu alles, was wir zum Arbeiten brauchen, auch wenn es noch mehr Funktionen gibt. Ich werde jetzt nur die wichtigen und für unseren nutzen notwendigen Funktionen erklären.
-## Projekt Übersicht  
-   ![Projekt](https://cdn.discordapp.com/attachments/520955035832811521/613702467045163027/unknown.png)  
-   Hier steht zuerst der Projektname.  
-   In der eckigen Klammer könnt ihr dann zuerst das Repository sehen und dann in welchem Branch ihr seid.
+Alle zu Git gehörigen Aktionen findest du im `Source Control` Tab.
