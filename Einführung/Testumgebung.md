@@ -50,7 +50,7 @@ Website: [BetonQuest](https://github.com/BetonQuest/BetonQuest)
 
 BetonQuest dient dazu, die Quests zu schreiben.  
 Dies ist ein komplexes Plugin, mit dem du in Zukunft Quest Schreiben wirst. Weitere Informationen findest du im Wiki Beitrag [BetonQuest](/Einführung/BetonQuest).  
-Die `config.yml` von BetonQuest übernimmst du aus dem Repository
+Die `config.yml` von BetonQuest übernimmst du aus diesem Repository.
 
 ## Weitere Plugins
 Es können weitere Plugins verwendet werden, die von BetonQuest unterstützt werden. Eine Liste alle unterstützten Plugins findest du hier: https://betonquest.github.io/BetonQuest/DEV/User-Documentation/Compatibility/
